@@ -1,0 +1,2 @@
+getent passwd | cut -d : -f 1
+# or cat /etc/passwd | cut -d : -f 1

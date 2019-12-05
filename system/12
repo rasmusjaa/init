@@ -1,0 +1,2 @@
+sudo du -h /var
+# or su first and then du, without su privileges not permissions to all folders

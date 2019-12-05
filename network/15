@@ -1,0 +1,2 @@
+To redirect intra.42.fr to 46.19.122.85 edit /etc/hosts and add line:
+46.19.122.85	 intra.42.fr

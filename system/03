@@ -1,0 +1,2 @@
+/etc/hostname
+# may also need to edit the /etc/hosts file, change all references to previous name to new one

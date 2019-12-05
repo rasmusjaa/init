@@ -1,0 +1,2 @@
+df -h --total
+# is human readable form instead of bytes, without total you get same without total counted

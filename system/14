@@ -1,0 +1,3 @@
+tail -f /var/log/syslog &
+# ampersand to run in background
+# view bg processes with command "jobs"

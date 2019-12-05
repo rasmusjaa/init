@@ -1,0 +1,2 @@
+~.ssh/iauthorized_keys
+# so in user's home, usually "locked down" (changed to root) to prevent regular users provisioning them

@@ -1,0 +1,2 @@
+dpkg-query -l
+# or "sudo apt list --installed"

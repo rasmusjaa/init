@@ -1,0 +1,2 @@
+systemctl list-unit-files --type=service | grep enabled
+# daemons are services that run in the background and you can configure shich to start at boot

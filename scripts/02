@@ -1,0 +1,22 @@
+# /bin/bash
+ID=$(id -u)
+
+if [ $ID != 0 ]
+then
+        printf "User not root, try again with root user\n"
+        exit 1
+else
+        printf "Give username of user you'd like to delete:\n"
+        read USER
+        check_user="$(cat /etc/passwd | grep $USER)"
+        if [ -z "$check_user" ]
+        then
+                printf "user $USER doesn't exist\n"
+        else
+				printf "killing following processes (show error if not any open):\n"
+				ps -fp $(pgrep -u $USER)
+				killall -u $USER
+                printf "deleting user $USER \n"
+				sudo userdel -r $USER
+        fi
+fi

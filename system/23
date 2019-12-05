@@ -1,0 +1,2 @@
+Graphic: Start up Debian (VM or computer), give your username and password when asked
+SSH: From terminal connect with command "ssh username@host" and give password when asked

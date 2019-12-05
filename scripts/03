@@ -1,0 +1,10 @@
+# /bin/bash
+printf "Give username of user whose home dir size (showing 1st level subdirs) you'd like to check:\n"
+read USER
+check_user="$(cat /etc/passwd | grep $USER)"
+if [ -z "$check_user" ]
+then
+	printf "user $USER doesn't exist\n"
+else
+	du -hc --max-depth=1 /home/$USER
+fi

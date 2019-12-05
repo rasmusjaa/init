@@ -1,0 +1,8 @@
+whois slash16.org
+# Gives information about the domain.
+# .org domain is provided by Public Interest Registry (PIR) organization
+
+whois 13.33.242.162
+# If you use whois for the server ip which hosts slash16.org domain (found with nslookup for example) you get information about the server
+whois 13.33.242.162 | grep OrgName
+# Servers are provided by Amazon Technologies Inc. so slash.org is hosted on AWS (Amaxon Web Services) servers
